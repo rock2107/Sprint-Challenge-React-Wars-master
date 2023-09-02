@@ -42,7 +42,7 @@ A web-based form that allows users to submit their information. The submitted da
 1. Clone the repository to your local machine.
 
 
-git clone https://github.com/your-username/user-information-form.git.
+git clone https://github.com/rock2107/UIforms.git
 
 2. Install the required Node.js modules.
 ```bash
