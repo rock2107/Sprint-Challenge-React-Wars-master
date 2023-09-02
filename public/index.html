@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customized SOP Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="./img/ui1.png" alt="Form Image" class="form-image">
+    <h1>Registration</h1>
+
+   <!-- <h1>User Information Form</h1> -->
+    <form id="userForm"  action="SubmitForm.html">
+        <!-- Personal Information -->
+        <fieldset>
+
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="FullName" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email address" required><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age Between 18 to 55" min="18" max="55" required><br><br>
+
+            <label for="education">Highest Level of Education:</label>
+            <input type="text" id="education" name="education" placeholder="highest education"><br><br>
+
+            <label for="institute">Institute where you completed your highest level of education:</label>
+            <input type="text" id="institute" name="institute" placeholder="University/Institute Name" required><br><br>
+
+            <label for="study">What did you study:</label>
+            <input type="text" id="study" name="study"placeholder='Specilization' required><br><br>
+        </fieldset>
+
+        <!-- Work Experience -->
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label for="workExperience">Do you have any relevant work experience?</label>
+            <input type="radio" id="workExperienceYes" name="workExperience" value="Yes" required>
+            <label for="workExperienceYes">Yes</label>
+            <input type="radio" id="workExperienceNo" name="workExperience" value="No" required>
+            <label for="workExperienceNo">No</label>
+            <br>
+
+            <label for="workDetails">Write None if no work experience. Provide the following details if yes: <br>
+                1. Job Title <br>  
+                2.Company Name <br>
+                3.Job duties <br>
+                Sample Answer: I worked as a Sales Manager at Effizient Immigration Inc from Jan 2022 till Feb 2023. 
+                In this role, I managed sales operations, reaching out to leads, lead the outreach program, ensured
+                 meeting monthly targets.
+
+            </label>
+            <textarea id="workDetails" name="workDetails" rows="4" required></textarea><br><br>
+        </fieldset>
+
+        <!-- Canadian Study Information -->
+        <fieldset>
+            <legend>Canadian Study Information</legend>
+            <label for="admittedToCanada">What institute did you get admitted to in Canada?</label>
+            <input type="text" id="admittedToCanada" name="admittedToCanada" required><br><br>
+            
+            <label for="programInCanada">What is your program of study in Canada?</label>
+            <input type="text" id="programInCanada" name="programInCanada" required><br><br>
+            
+            <label for="applyingFromCountry">Which country are you applying from?</label>
+            <input type="text" id="applyingFromCountry" name="applyingFromCountry" required><br><br>
+            
+            <label for="futureGoals">What are your future goals?</label>
+            <textarea id="futureGoals" name="futureGoals" rows="4"  required></textarea><br><br>
+
+            <label for="englishListening">English Scores out of 10 - Listening:</label>
+            <input type="number" id="englishListening" name="englishListening" min="2" max="10" required><br><br>
+
+            <label for="englishReading">English Scores out of 10 - Reading:</label>
+            <input type="number" id="englishReading" name="englishReading" min="2" max="10" required><br><br>
+
+            <label for="englishSpeaking">English Scores out of 10 - Speaking:</label>
+            <input type="number" id="englishSpeaking" name="englishSpeaking" min="2" max="10" required><br><br>
+
+            <label for="englishWriting">English Scores out of 10 - Writing:</label>
+            <input type="number" id="englishWriting" name="englishWriting" min="2" max="10" required ><br><br>
+
+            <label for="firstYearTuition">Did you pay your first-year tuition?</label>
+            <input type="radio" id="firstYearTuitionYes" name="firstYearTuition" value="Yes" required>
+            <label for="firstYearTuitionYes">Yes</label>
+            <input type="radio" id="firstYearTuitionNo" name="firstYearTuition" value="No"  min="10" required>
+            <label for="firstYearTuitionNo">No</label><br><br>
+
+            <label for="tuitionFeePaid">How much tuition fee did you pay?</label>
+            <input type="number" id="tuitionFeePaid" name="tuitionFeePaid" min="10" required><br><br>
+
+            <label for="gic">Did you do a GIC?</label>
+            <input type="radio" id="gicYes" name="gic" value="Yes" required>
+            <label for="gicYes">Yes</label>
+            <input type="radio" id="gicNo" name="gic" value="No" required>
+            <label for="gicNo">No</label><br><br>
+
+            <label for="gicAmountPaid">How much did you pay towards GIC?</label>
+            <input type="number" id="gicAmountPaid" name="gicAmountPaid" min="10" required><br><br>
+        </fieldset>
+
+        <div class="button">
+            <button type="submit" value="submit"  id="submit">submit</button>
+            
+        </div>
+     
+
+    </form>
+    <script src="scripts.js"></script>
+</body>
+</html>
