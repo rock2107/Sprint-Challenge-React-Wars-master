@@ -65,13 +65,13 @@ app.post('/submit', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: 'guptashishu2107@gmail.com', // Replace with your Gmail email
-            pass: 'uvcjpnvdyjxanbih',        // Replace with your Gmail password
+            user: 'Replace with your Gmail email', // Replace with your Gmail email
+            pass: 'Replace with your app genrated password for Gmail ',        // Replace with your Gmail password
         },
     });
 
     const mailOptions = {
-        from: 'guptashishu2107@gmail.com',
+        from: 'Replace with your Gmail email',
         to: email,
         subject: 'Thank you for your submission',
         text: `Dear ${name},\n\nThank you for your submission. We have received your message \n\n With Regards \n Shirshant`,
